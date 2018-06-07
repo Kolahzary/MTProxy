@@ -15,7 +15,7 @@ to run mtproto-proxy:
   where:
           - nobody is the user name. mtproto-proxy calls setuid() to drop privilegies
           - 443 is the port, used by clients to connect to the proxy
-          - 8888 is the local port. You can use it to get statistics from mtproto. Like wget localhost:8888/stats
+          - 8888 is the statistics port. You can use it to get statistics from mtproto. Like curl localhost:8888/stats
             You can only get this stat via loopback
           - <secret> is the secret generated at step 3. 
           - proxy-secret and proxy-multi.conf are obtained at steps 1 and 2
