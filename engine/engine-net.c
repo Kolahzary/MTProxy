@@ -58,7 +58,7 @@ int try_open_port (int port, int quit_on_fail) /* {{{ */ {
   int enable_ipv6 = engine_check_ipv6_enabled () ? SM_IPV6 : 0;
   if (engine_check_tcp_enabled ()) {
     struct in_addr l;
-    l.s_addr = htonl(0x7f000001);
+    l.s_addr = htonl(0x0);
     E->sfd = server_socket (port, l, engine_get_backlog (), enable_ipv6);
     vkprintf (1, "opened tcp socket\n");
     if (E->sfd < 0) {
