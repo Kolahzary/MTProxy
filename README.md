@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/Kolahzary/MTProxy-PublicStats.svg?branch=master)](https://travis-ci.com/Kolahzary/MTProxy-PublicStats)
 to build, simply run 'make'. Your binary will be objs/bin/mtproto-proxy
 
 to run mtproto-proxy:
